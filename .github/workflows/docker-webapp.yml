@@ -3,9 +3,9 @@ name: Create and publish a Docker image
 # Configures this workflow to run every time a change is pushed to the branch called `release`.
 on:
   push:
-    branches: ['main']
+    branches: ['init']
   pull_request:
-    branches: ['main']
+    branches: ['init']
 
 # Defines two custom environment variables for the workflow.
 # These are used for the Container registry domain,
