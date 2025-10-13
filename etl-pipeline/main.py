@@ -76,6 +76,7 @@ def on_message(client: Client, userdata: InfluxDBClient, message: MQTTMessage):
 def main():
 	"""Main procedure
 	"""
+	logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 	database_client = InfluxDBClient.from_env_properties()
 
 	logging.info("Entering credentials")
